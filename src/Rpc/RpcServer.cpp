@@ -206,6 +206,7 @@ bool RpcServer::processJsonRpcRequest(const HttpRequest& request, HttpResponse& 
 }
 
 bool RpcServer::isCoreReady() {
+   return true;
   return m_core.getCurrency().isTestnet() || m_p2p.get_payload_object().isSynchronized();
 }
 

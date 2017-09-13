@@ -2333,8 +2333,8 @@ void Core::updateBlockMedianSize() {
   size_t nextBlockGrantedFullRewardZone = currency.blockGrantedFullRewardZoneByBlockVersion(upgradeManager->getBlockMajorVersion(mainChain->getTopBlockIndex() + 1));
 
   auto lastBlockSizes = mainChain->getLastBlocksSizes(currency.rewardBlocksWindow());
-//freeman *10
-  blockMedianSize = std::max(Common::medianValue(lastBlockSizes), static_cast<uint64_t>(nextBlockGrantedFullRewardZone)) * 10;
+//freeman *1000
+  blockMedianSize = std::max(Common::medianValue(lastBlockSizes), static_cast<uint64_t>(nextBlockGrantedFullRewardZone)) * 100;
 }
 
 }

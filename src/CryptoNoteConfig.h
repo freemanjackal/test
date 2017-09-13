@@ -120,7 +120,7 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[] = "12867628927eaa0b13a4e52e61864a75aa475e67f6b5748eb3fc1d2fe468aed4";
 
 const char* const SEED_NODES[] = {
-  "",
+  "138.68.254.219:15555",
 };
 
 struct CheckpointData {
@@ -130,7 +130,17 @@ struct CheckpointData {
 
 const CheckpointData CHECKPOINTS[] = {
   
-  {0, ""}
+  {12, "7947e591ed44006913739c497171d11410fcb127dcedadb8639b4dcd7527f996"},
+  {30, "bf6b30521653bf02dcf1a51cd0026c45c3f871e082659edcef8fdc940f42da5d"},
+  {51, "0b38227c102246411b7e75138f98cb509f467f6942744b612b971b6dbbdda5aa"},
+  {115, "bc7e721c86cf90f763eb048d7d111a75f05869e403faaa6da1e8daa253d3f6cc"},
+  {220, "f1e3311ed056493a59869bf05145d07e12eebcf1adbcafd58c36e015c846dddd"},
+  {310, "7deece2bba04ddec253b91e86bcd5c07c345c8e57bbf23949d1e5669a4cd0c8e"},
+  {600, "665c8439f05a4401193590a0423651d8edd539279f4099748e5e8273edcec057"},
+  {790, "344e2a31b024d03164df431a19dcc2146cd6b2bb22366ad840b70b2a85e4d584"},
+  {924, "01a0dda3d8c771b5fe7d1ac11803e7f31282fe0f257f5b23fbfea374167e0575"},
+  {1081, "5950b01270769bfec3b70b02e4e06e6a8aa2f64769ceb5c4c9a0d47cb7d987f0"},
+  {1304, "48a09f279c8565306d0f7a88c2afee0e5cfad43a6c9ba91e800b0c43b859ab0c"}
 };
 } // CryptoNote
 
